@@ -6,7 +6,7 @@ set numFrames [molinfo $molID get numframes]
 
 puts "Number of frames: $numFrames"
 
-set fpCVDat [open "cv_data.csv" w]
+set fpCVDat [open "./tmp/cv_data.csv" w]
 
 puts $fpCVDat "dist0,dist1,dist2,dist3" 
 
