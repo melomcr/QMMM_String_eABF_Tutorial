@@ -1,18 +1,5 @@
 
-set output_root "./output/%1d/decarb"
-set namd_config_file "namd.conf"
-set bincoor_file "./setup/image_%1d.coor"
-set xsc_file "./setup/image_%1d.xsc"
-set colvars_file "./setup/colvars_%1d.conf"
-set temperature 300
-set num_iter STRINGITERATIONS
-set num_images [ llength [ glob ./setup/*.coor ] ]
-set num_swarm_steps 20
-set num_equil_steps 200
-set num_equil_stages 5
-set smooth_param 0.1
-set swarms_force_constant 0.5
-
+source string_param.conf
 
 replicaBarrier
 set replica_id [myReplica]
