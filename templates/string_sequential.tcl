@@ -20,6 +20,12 @@ if { [info exists equil_stage_expon] == 0 } {
 if { [info exists restart] == 0 } {
 	set restart no
 }
+if { [info exists swarms_force_constant_min] == 0} {
+    set swarms_force_constant_min 1
+}
+if { [info exists bias_param] == 0} {
+    set bias_param 1
+}
 set equil_steps_per_stage [expr int($num_equil_steps / $num_equil_stages)]
 
 # Find the image master
