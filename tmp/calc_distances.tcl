@@ -1,5 +1,5 @@
 set molID [ mol new ./setup/decarboxylase.0.psf] 
-mol addfile ./SMD_Data/min_smd.dcd waitfor all molid $molID 
+mol addfile ./SMD_Data/smd.dcd waitfor all molid $molID 
 
 
 set numFrames [molinfo $molID get numframes]

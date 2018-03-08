@@ -32,7 +32,8 @@ set equil_steps_per_stage [expr int($num_equil_steps / $num_equil_stages)]
 set image_rank [myReplica]
 set num_replicas [numReplicas]
 
-set image_index [ expr ${image_rank}/${num_swarms} ]
+#set image_index [ expr ${image_rank}/${num_swarms} ]
+set image_index ${image_rank}
 
 # Set pi
 set pi 3.1415926535897931
