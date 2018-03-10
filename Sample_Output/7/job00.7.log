@@ -1,0 +1,2748 @@
+Converse/Charm++ Commit ID: v6.8.0-57-g5705b64-namd-charm-6.8.0-build-2017-Sep-12-21260
+Warning> Randomization of virtual memory (ASLR) is turned on in the kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try running with '+isomalloc_sync'.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 unique compute nodes (8-way SMP).
+Charm++> cpu topology info is gathered in 0.002 seconds.
+Info: NAMD 2.12 for Linux-x86_64-MPI
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Comp. Chem. 26:1781-1802 (2005)
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 60800 for mpi-linux-x86_64
+Info: Built Sun Mar 4 20:25:25 CST 2018 by melomcr on amsterdam.ks.uiuc.edu
+Info: 1 NAMD  2.12  Linux-x86_64-MPI  1    amsterdam.ks.uiuc.edu  melomcr
+Info: Running on 1 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.0186514 s
+Info: 465.277 MB of memory in use based on /proc/self/stat
+Info: Configuration file is string_parallel.tcl
+Info: Working in the current directory /Scr/rcbernardi-tmp/Work/OMPdecarboxylase/Marcelo/QMMM_String_eABF_Tutorial/String_eABF
+Calculating 8 images with 1 trajectories per image.
+TCL: Suspending until startup complete.
+Info: EXTENDED SYSTEM FILE   ./setup/image_7.xsc
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               0.5
+Info: NUMBER OF STEPS        0
+Info: STEPS PER CYCLE        1
+Info: PERIODIC CELL BASIS 1  78.0108 0 0
+Info: PERIODIC CELL BASIS 2  0 78.0108 0
+Info: PERIODIC CELL BASIS 3  0 0 78.0108
+Info: PERIODIC CELL CENTER   0 0 0
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             20 steps
+Info: FIRST LDB TIMESTEP     1
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: INITIAL TEMPERATURE    300
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: NO DCD TRAJECTORY OUTPUT
+Info: NO EXTENDED SYSTEM TRAJECTORY OUTPUT
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        ./output/7/decarb.job0000
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       ./output/7/decarb.job0000.restart
+Info: RESTART FREQUENCY      100
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           12
+Info: SWITCHING OFF          14
+Info: PAIRLIST DISTANCE      15
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 0
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        17.5
+Info: ENERGY OUTPUT STEPS    100
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    100
+Info: QM FORCES ACTIVE
+Info: QM SOFTWARE: mopac
+Info: QM ATOM CHARGES FROM QM SOFTWARE: MULLIKEN
+Info: QM EXECUTABLE PATH: /Scr/rcbernardi-new/Software/mopac/MOPAC2016.exe
+Info: QM COLUMN: beta
+Info: QM BOND COLUMN: occ
+Info: QM WILL DETECT BONDS BETWEEN QM AND MM ATOMS.
+Info: QM-MM BOND SCHEME: Charge Shift.
+Info: QM Will use PSF charges.
+Info: QM BASE DIRECTORY: /dev/shm/NAMD_SM_qmmm
+Info: QM CONFIG LINE: PM7 XYZ T=2M 1SCF AUX LET GRAD QMMM THREADS=2
+Info: QM CONFIG LINE: decarboxylase
+Info: QM POINT CHARGES WILL BE SELECTED EVERY 1 STEPS.
+Info: QM Point Charge Switching: ON.
+Info: QM Point Charge SCHEME: none.
+Info: QM executions per node: 1
+Info: COLLECTIVE VARIABLES CALCULATION REQUESTED
+Info: COLLECTIVE VARIABLES CONFIGURATION   ./setup/colvars_7.conf
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   300
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 200 INVERSE PS
+Info: LANGEVIN DYNAMICS APPLIED TO HYDROGENS
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-05
+Info: PME EWALD COEFFICIENT       0.192342
+Info: PME INTERPOLATION ORDER     4
+Info: PME GRID DIMENSIONS         80 80 80
+Info: PME MAXIMUM GRID SPACING    1
+Info: Attempting to read FFTW data from FFTW_NAMD_2.12_Linux-x86_64-MPI.txt
+Info: Optimizing 6 FFT steps.  1... 2... 3... 4... 5... 6...   Done.
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      1
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RANDOM NUMBER SEED     32564
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         decarboxylase.0.pdb
+Info: STRUCTURE FILE         decarboxylase.0.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             ./toppar/par_all36_prot.prm
+Info: PARAMETERS             ./toppar/par_all36_cgenff.prm
+Info: PARAMETERS             ./toppar/par_all36_na.prm
+Info: PARAMETERS             ./toppar/par_all36_carb.prm
+Info: PARAMETERS             ./toppar/par_all36_lipid.prm
+Info: PARAMETERS             ./toppar/toppar_water_ions_namd.str
+Info: PARAMETERS             ./toppar/ligand.str
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     ./setup/image_7.coor
+Info: SKIPPING rtf SECTION IN STREAM FILE
+Info: SKIPPING rtf SECTION IN STREAM FILE
+Info: SUMMARY OF PARAMETERS:
+Info: 912 BONDS
+Info: 2656 ANGLES
+Info: 6453 DIHEDRAL
+Info: 190 IMPROPER
+Info: 6 CROSSTERM
+Info: 350 VDW
+Info: 6 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 1.93129
+Info: Reading pdb file decarboxylase.0.pdb
+Info: TIME FOR READING PDB FILE: 0.135898
+Info: 
+Info: Using the following PDB file for QM parameters: decarboxylase.0.pdb
+Info: Number of QM atoms (excluding Dummy atoms): 35
+Info: We found 2 QM-MM bonds.
+Info: 1) Group ID: 1 ; Group size: 35 atoms ; Total PSF charge: -1
+Info: MM-QM pair: 1005:1007 -> Value (distance or ratio): 1.09 (QM Group 0 ID 1)
+Info: MM-QM pair: 3303:3304 -> Value (distance or ratio): 0.99 (QM Group 0 ID 1)
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 48341 ATOMS
+Info: 33354 BONDS
+Info: 21065 ANGLES
+Info: 8802 DIHEDRALS
+Info: 566 IMPROPERS
+Info: 213 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 145023 DEGREES OF FREEDOM
+Info: 16669 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 16669 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 294152 amu
+Info: TOTAL CHARGE = 0.999003 e
+Info: MASS DENSITY = 1.02889 g/cm^3
+Info: ATOM DENSITY = 0.101824 atoms/A^3
+Info: *****************************
+Info: Reading from binary file ./setup/image_7.coor
+Info: 
+Info: Entering startup at 26.9564 s, 588.863 MB of memory in use
+Info: Startup phase 0 took 0.000198693 s, 588.863 MB of memory in use
+Info: The QM region will remove 33 bonds, 52 angles, 61 dihedrals, 4 impropers and 0 crossterms.
+Info: ADDED 63124 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.0455516 s, 590.906 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000290477 AT 0.251946
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000193237 AT 14.0334
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00165469 AT 12.1218
+Info: Startup phase 2 took 0.00715162 s, 595.004 MB of memory in use
+Info: Startup phase 3 took 0.000181184 s, 595.004 MB of memory in use
+Info: Startup phase 4 took 0.000571756 s, 595.371 MB of memory in use
+Info: Startup phase 5 took 0.00015556 s, 595.371 MB of memory in use
+Info: PATCH GRID IS 4 (PERIODIC) BY 4 (PERIODIC) BY 4 (PERIODIC)
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: REMOVING COM VELOCITY 0.00355408 0.0251667 0.011229
+Info: LARGEST PATCH (38) HAS 821 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.0337925 s, 605.309 MB of memory in use
+Info: PME using 1 and 1 processors for FFT and reciprocal sum.
+Info: PME GRID LOCATIONS: 0
+Info: PME TRANS LOCATIONS: 0
+Info: PME USING 1 GRID NODES AND 1 TRANS NODES
+Info: Optimizing 4 FFT steps.  1... 2... 3... 4...   Done.
+Info: Startup phase 7 took 0.00501753 s, 605.309 MB of memory in use
+Info: Startup phase 8 took 0.000156191 s, 605.309 MB of memory in use
+Info: Startup phase 9 took 9.26559e-05 s, 605.309 MB of memory in use
+Info: Startup phase 10 took 7.98698e-05 s, 605.309 MB of memory in use
+Info: Startup phase 11 took 9.33884e-05 s, 605.309 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.000171558 s, 605.309 MB of memory in use
+Info: CREATING 1287 COMPUTE OBJECTS
+colvars: ----------------------------------------------------------------------
+colvars: Initializing the collective variables module, version 2017-09-18.
+colvars: Please cite Fiorin et al, Mol Phys 2013:
+colvars:  http://dx.doi.org/10.1080/00268976.2013.813594
+colvars: in any publication based on this calculation.
+colvars: Using NAMD interface, version 2017-07-15.
+colvars: ----------------------------------------------------------------------
+colvars: Reading new configuration from file "./setup/colvars_7.conf":
+colvars: # indexFile = "" [default]
+colvars: # smp = on [default]
+colvars: # analysis = off [default]
+colvars: # colvarsTrajFrequency = 20
+colvars: # colvarsRestartFrequency = 100 [default]
+colvars: # colvarsTrajAppend = off [default]
+colvars: # scriptedColvarForces = off [default]
+colvars: # scriptingAfterBiases = on [default]
+colvars: ----------------------------------------------------------------------
+colvars:   Initializing a new collective variable.
+colvars:   # name = "swarms_atmDist0"
+colvars:   Initializing a new "distance" component.
+colvars:     # componentCoeff = 1 [default]
+colvars:     # componentExp = 1 [default]
+colvars:     # period = 0 [default]
+colvars:     # wrapAround = 0 [default]
+colvars:     # forceNoPBC = off [default]
+colvars:     # scalable = on [default]
+colvars:       Initializing atom group "group1".
+colvars:       # name = "" [default]
+colvars:       # centerReference = off [default]
+colvars:       # rotateReference = off [default]
+colvars:       # atomsOfGroup = "" [default]
+colvars:       # indexGroup = "" [default]
+colvars:       # psfSegID =  [default]
+colvars:       # atomsFile = "" [default]
+colvars:       # dummyAtom = ( 0 , 0 , 0 ) [default]
+colvars:       # enableForces = on [default]
+colvars:       # enableFitGradients = on [default]
+colvars:       Enabling scalable calculation for group "group1".
+colvars:       Atom group "group1" defined, 1 atoms initialized: total mass = 12.0107, total charge = 0.
+colvars:       Initializing atom group "group2".
+colvars:       # name = "" [default]
+colvars:       # centerReference = off [default]
+colvars:       # rotateReference = off [default]
+colvars:       # atomsOfGroup = "" [default]
+colvars:       # indexGroup = "" [default]
+colvars:       # psfSegID =  [default]
+colvars:       # atomsFile = "" [default]
+colvars:       # dummyAtom = ( 0 , 0 , 0 ) [default]
+colvars:       # enableForces = on [default]
+colvars:       # enableFitGradients = on [default]
+colvars:       Enabling scalable calculation for group "group2".
+colvars:       Atom group "group2" defined, 1 atoms initialized: total mass = 12.0107, total charge = 0.
+colvars:     # oneSiteSystemForce = off [default]
+colvars:     # oneSiteTotalForce = off [default]
+colvars:   All components initialized.
+colvars:   # timeStepFactor = 1 [default]
+colvars:   # width = 1 [default]
+colvars:   # lowerBoundary = 0 [default]
+colvars:   # upperBoundary = 0 [default]
+colvars:   # expandBoundaries = off [default]
+colvars:   # extendedLagrangian = off [default]
+colvars:   # outputValue = on [default]
+colvars:   # outputVelocity = off [default]
+colvars:   # outputTotalForce = off [default]
+colvars:   # outputAppliedForce = off [default]
+colvars:   # subtractAppliedForce = off [default]
+colvars: ----------------------------------------------------------------------
+colvars:   Initializing a new collective variable.
+colvars:   # name = "swarms_atmDist1"
+colvars:   Initializing a new "distance" component.
+colvars:     # componentCoeff = 1 [default]
+colvars:     # componentExp = 1 [default]
+colvars:     # period = 0 [default]
+colvars:     # wrapAround = 0 [default]
+colvars:     # forceNoPBC = off [default]
+colvars:     # scalable = on [default]
+colvars:       Initializing atom group "group1".
+colvars:       # name = "" [default]
+colvars:       # centerReference = off [default]
+colvars:       # rotateReference = off [default]
+colvars:       # atomsOfGroup = "" [default]
+colvars:       # indexGroup = "" [default]
+colvars:       # psfSegID =  [default]
+colvars:       # atomsFile = "" [default]
+colvars:       # dummyAtom = ( 0 , 0 , 0 ) [default]
+colvars:       # enableForces = on [default]
+colvars:       # enableFitGradients = on [default]
+colvars:       Enabling scalable calculation for group "group1".
+colvars:       Atom group "group1" defined, 1 atoms initialized: total mass = 12.0107, total charge = 0.
+colvars:       Initializing atom group "group2".
+colvars:       # name = "" [default]
+colvars:       # centerReference = off [default]
+colvars:       # rotateReference = off [default]
+colvars:       # atomsOfGroup = "" [default]
+colvars:       # indexGroup = "" [default]
+colvars:       # psfSegID =  [default]
+colvars:       # atomsFile = "" [default]
+colvars:       # dummyAtom = ( 0 , 0 , 0 ) [default]
+colvars:       # enableForces = on [default]
+colvars:       # enableFitGradients = on [default]
+colvars:       Enabling scalable calculation for group "group2".
+colvars:       Atom group "group2" defined, 1 atoms initialized: total mass = 1.0079, total charge = 0.
+colvars:     # oneSiteSystemForce = off [default]
+colvars:     # oneSiteTotalForce = off [default]
+colvars:   All components initialized.
+colvars:   # timeStepFactor = 1 [default]
+colvars:   # width = 1 [default]
+colvars:   # lowerBoundary = 0 [default]
+colvars:   # upperBoundary = 0 [default]
+colvars:   # expandBoundaries = off [default]
+colvars:   # extendedLagrangian = off [default]
+colvars:   # outputValue = on [default]
+colvars:   # outputVelocity = off [default]
+colvars:   # outputTotalForce = off [default]
+colvars:   # outputAppliedForce = off [default]
+colvars:   # subtractAppliedForce = off [default]
+colvars: ----------------------------------------------------------------------
+colvars:   Initializing a new collective variable.
+colvars:   # name = "swarms_atmDist2"
+colvars:   Initializing a new "distance" component.
+colvars:     # componentCoeff = 1 [default]
+colvars:     # componentExp = 1 [default]
+colvars:     # period = 0 [default]
+colvars:     # wrapAround = 0 [default]
+colvars:     # forceNoPBC = off [default]
+colvars:     # scalable = on [default]
+colvars:       Initializing atom group "group1".
+colvars:       # name = "" [default]
+colvars:       # centerReference = off [default]
+colvars:       # rotateReference = off [default]
+colvars:       # atomsOfGroup = "" [default]
+colvars:       # indexGroup = "" [default]
+colvars:       # psfSegID =  [default]
+colvars:       # atomsFile = "" [default]
+colvars:       # dummyAtom = ( 0 , 0 , 0 ) [default]
+colvars:       # enableForces = on [default]
+colvars:       # enableFitGradients = on [default]
+colvars:       Enabling scalable calculation for group "group1".
+colvars:       Atom group "group1" defined, 1 atoms initialized: total mass = 15.9994, total charge = 0.
+colvars:       Initializing atom group "group2".
+colvars:       # name = "" [default]
+colvars:       # centerReference = off [default]
+colvars:       # rotateReference = off [default]
+colvars:       # atomsOfGroup = "" [default]
+colvars:       # indexGroup = "" [default]
+colvars:       # psfSegID =  [default]
+colvars:       # atomsFile = "" [default]
+colvars:       # dummyAtom = ( 0 , 0 , 0 ) [default]
+colvars:       # enableForces = on [default]
+colvars:       # enableFitGradients = on [default]
+colvars:       Enabling scalable calculation for group "group2".
+colvars:       Atom group "group2" defined, 1 atoms initialized: total mass = 15.9994, total charge = 0.
+colvars:     # oneSiteSystemForce = off [default]
+colvars:     # oneSiteTotalForce = off [default]
+colvars:   All components initialized.
+colvars:   # timeStepFactor = 1 [default]
+colvars:   # width = 1 [default]
+colvars:   # lowerBoundary = 0 [default]
+colvars:   # upperBoundary = 0 [default]
+colvars:   # expandBoundaries = off [default]
+colvars:   # extendedLagrangian = off [default]
+colvars:   # outputValue = on [default]
+colvars:   # outputVelocity = off [default]
+colvars:   # outputTotalForce = off [default]
+colvars:   # outputAppliedForce = off [default]
+colvars:   # subtractAppliedForce = off [default]
+colvars: ----------------------------------------------------------------------
+colvars:   Initializing a new collective variable.
+colvars:   # name = "swarms_atmDist3"
+colvars:   Initializing a new "distance" component.
+colvars:     # componentCoeff = 1 [default]
+colvars:     # componentExp = 1 [default]
+colvars:     # period = 0 [default]
+colvars:     # wrapAround = 0 [default]
+colvars:     # forceNoPBC = off [default]
+colvars:     # scalable = on [default]
+colvars:       Initializing atom group "group1".
+colvars:       # name = "" [default]
+colvars:       # centerReference = off [default]
+colvars:       # rotateReference = off [default]
+colvars:       # atomsOfGroup = "" [default]
+colvars:       # indexGroup = "" [default]
+colvars:       # psfSegID =  [default]
+colvars:       # atomsFile = "" [default]
+colvars:       # dummyAtom = ( 0 , 0 , 0 ) [default]
+colvars:       # enableForces = on [default]
+colvars:       # enableFitGradients = on [default]
+colvars:       Enabling scalable calculation for group "group1".
+colvars:       Atom group "group1" defined, 1 atoms initialized: total mass = 15.9994, total charge = 0.
+colvars:       Initializing atom group "group2".
+colvars:       # name = "" [default]
+colvars:       # centerReference = off [default]
+colvars:       # rotateReference = off [default]
+colvars:       # atomsOfGroup = "" [default]
+colvars:       # indexGroup = "" [default]
+colvars:       # psfSegID =  [default]
+colvars:       # atomsFile = "" [default]
+colvars:       # dummyAtom = ( 0 , 0 , 0 ) [default]
+colvars:       # enableForces = on [default]
+colvars:       # enableFitGradients = on [default]
+colvars:       Enabling scalable calculation for group "group2".
+colvars:       Atom group "group2" defined, 1 atoms initialized: total mass = 15.9994, total charge = 0.
+colvars:     # oneSiteSystemForce = off [default]
+colvars:     # oneSiteTotalForce = off [default]
+colvars:   All components initialized.
+colvars:   # timeStepFactor = 1 [default]
+colvars:   # width = 1 [default]
+colvars:   # lowerBoundary = 0 [default]
+colvars:   # upperBoundary = 0 [default]
+colvars:   # expandBoundaries = off [default]
+colvars:   # extendedLagrangian = off [default]
+colvars:   # outputValue = on [default]
+colvars:   # outputVelocity = off [default]
+colvars:   # outputTotalForce = off [default]
+colvars:   # outputAppliedForce = off [default]
+colvars:   # subtractAppliedForce = off [default]
+colvars: ----------------------------------------------------------------------
+colvars: Collective variables initialized, 4 in total.
+colvars: ----------------------------------------------------------------------
+colvars:   Initializing a new "harmonic" instance.
+colvars:   # name = "bias_swarms_atmDist0"
+colvars:   # colvars = { swarms_atmDist0 }
+colvars:   # outputEnergy = off [default]
+colvars:   # timeStepFactor = 1 [default]
+colvars:   # writeTISamples = off [default]
+colvars:   # writeTIPMF = off [default]
+colvars:   # centers = { 4.50214 }
+colvars:   # targetCenters = { 4.50214 } [default]
+colvars:   # outputCenters = off [default]
+colvars:   # forceConstant = 0
+colvars:   # targetForceConstant = 0 [default]
+colvars: ----------------------------------------------------------------------
+colvars:   Initializing a new "harmonic" instance.
+colvars:   # name = "bias_swarms_atmDist1"
+colvars:   # colvars = { swarms_atmDist1 }
+colvars:   # outputEnergy = off [default]
+colvars:   # timeStepFactor = 1 [default]
+colvars:   # writeTISamples = off [default]
+colvars:   # writeTIPMF = off [default]
+colvars:   # centers = { 1.05477 }
+colvars:   # targetCenters = { 1.05477 } [default]
+colvars:   # outputCenters = off [default]
+colvars:   # forceConstant = 0
+colvars:   # targetForceConstant = 0 [default]
+colvars: ----------------------------------------------------------------------
+colvars:   Initializing a new "harmonic" instance.
+colvars:   # name = "bias_swarms_atmDist2"
+colvars:   # colvars = { swarms_atmDist2 }
+colvars:   # outputEnergy = off [default]
+colvars:   # timeStepFactor = 1 [default]
+colvars:   # writeTISamples = off [default]
+colvars:   # writeTIPMF = off [default]
+colvars:   # centers = { 3.141 }
+colvars:   # targetCenters = { 3.141 } [default]
+colvars:   # outputCenters = off [default]
+colvars:   # forceConstant = 0
+colvars:   # targetForceConstant = 0 [default]
+colvars: ----------------------------------------------------------------------
+colvars:   Initializing a new "harmonic" instance.
+colvars:   # name = "bias_swarms_atmDist3"
+colvars:   # colvars = { swarms_atmDist3 }
+colvars:   # outputEnergy = off [default]
+colvars:   # timeStepFactor = 1 [default]
+colvars:   # writeTISamples = off [default]
+colvars:   # writeTIPMF = off [default]
+colvars:   # centers = { 2.61602 }
+colvars:   # targetCenters = { 2.61602 } [default]
+colvars:   # outputCenters = off [default]
+colvars:   # forceConstant = 0
+colvars:   # targetForceConstant = 0 [default]
+colvars: ----------------------------------------------------------------------
+colvars: Collective variables biases initialized, 4 in total.
+colvars: ----------------------------------------------------------------------
+colvars: Collective variables module (re)initialized.
+colvars: ----------------------------------------------------------------------
+colvars: Updating NAMD interface:
+colvars: updating atomic data (0 atoms).
+colvars: updating group data (7 scalable groups, 7 atoms in total).
+colvars: Updating NAMD interface:
+colvars: updating atomic data (0 atoms).
+colvars: updating group data (7 scalable groups, 7 atoms in total).
+colvars: Re-initialized atom group swarms_atmDist0:0/0. 1 atoms: total mass = 12.0107.
+colvars: Re-initialized atom group swarms_atmDist0:0/1. 1 atoms: total mass = 12.0107.
+colvars: Re-initialized atom group swarms_atmDist1:0/0. 1 atoms: total mass = 12.0107.
+colvars: Re-initialized atom group swarms_atmDist1:0/1. 1 atoms: total mass = 1.0079.
+colvars: Re-initialized atom group swarms_atmDist2:0/0. 1 atoms: total mass = 15.9994.
+colvars: Re-initialized atom group swarms_atmDist2:0/1. 1 atoms: total mass = 15.9994.
+colvars: Re-initialized atom group swarms_atmDist3:0/0. 1 atoms: total mass = 15.9994.
+colvars: Re-initialized atom group swarms_atmDist3:0/1. 1 atoms: total mass = 15.9994.
+colvars: The restart output state file will be "./output/7/decarb.job0000.restart.colvars.state".
+colvars: The final output state file will be "./output/7/decarb.job0000.colvars.state".
+colvars: Writing to colvar trajectory file "./output/7/decarb.job0000.colvars.traj".
+Info: Startup phase 13 took 0.0552472 s, 608.309 MB of memory in use
+Info: Startup phase 14 took 0.000155098 s, 608.309 MB of memory in use
+Info: Startup phase 15 took 0.000397529 s, 616.387 MB of memory in use
+Info: Finished startup at 27.1054 s, 616.387 MB of memory in use
+
+TCL: Running for 5 steps
+colvars: Updating NAMD interface:
+colvars: updating atomic data (0 atoms).
+colvars: updating group data (7 scalable groups, 7 atoms in total).
+colvars: Re-initialized atom group swarms_atmDist0:0/0. 1 atoms: total mass = 12.0107.
+colvars: Re-initialized atom group swarms_atmDist0:0/1. 1 atoms: total mass = 12.0107.
+colvars: Re-initialized atom group swarms_atmDist1:0/0. 1 atoms: total mass = 12.0107.
+colvars: Re-initialized atom group swarms_atmDist1:0/1. 1 atoms: total mass = 1.0079.
+colvars: Re-initialized atom group swarms_atmDist2:0/0. 1 atoms: total mass = 15.9994.
+colvars: Re-initialized atom group swarms_atmDist2:0/1. 1 atoms: total mass = 15.9994.
+colvars: Re-initialized atom group swarms_atmDist3:0/0. 1 atoms: total mass = 15.9994.
+colvars: Re-initialized atom group swarms_atmDist3:0/1. 1 atoms: total mass = 15.9994.
+colvars: The restart output state file will be "./output/7/decarb.job0000.restart.colvars.state".
+colvars: The final output state file will be "./output/7/decarb.job0000.colvars.state".
+Info: List of ranks running QM simulations: 0.
+QMENERGY:       0         1.0000      -187.8930       -41.8121
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+QMETITLE:      TS           QMID         ENERGY  PMECORRENERGY
+
+ENERGY:       0     15630.6977     10235.3265      1946.1408       116.1611        -196458.3938     18207.2113         0.0000       -41.8121     42902.2471        -107462.4212       297.7375   -150364.6683   -107367.5144       297.7375           -549.7196      -809.6376    474748.4077      -549.7196      -809.6376
+
+LDB: ============= START OF LOAD BALANCING ============== 30.5161
+LDB: ============== END OF LOAD BALANCING =============== 30.5162
+LDB: =============== DONE WITH MIGRATION ================ 30.5248
+Info: Initial time: 1 CPUs 3.40538 s/step 78.8282 days/ns 737.262 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 33.9264
+LDB: ============== END OF LOAD BALANCING =============== 33.9281
+LDB: =============== DONE WITH MIGRATION ================ 33.9325
+Info: Initial time: 1 CPUs 3.2202 s/step 74.5417 days/ns 737.992 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 37.1536
+LDB: ============== END OF LOAD BALANCING =============== 37.1554
+LDB: =============== DONE WITH MIGRATION ================ 37.1559
+Info: Initial time: 1 CPUs 2.95959 s/step 68.509 days/ns 738.344 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 40.1157
+LDB: ============== END OF LOAD BALANCING =============== 40.1158
+LDB: =============== DONE WITH MIGRATION ================ 40.126
+Info: Benchmark time: 1 CPUs 3.32283 s/step 76.9173 days/ns 738.945 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 43.4495
+LDB: ============== END OF LOAD BALANCING =============== 43.4496
+LDB: =============== DONE WITH MIGRATION ================ 43.4502
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Info: Benchmark time: 1 CPUs 2.875 s/step 66.5509 days/ns 739.258 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 46.3253
+LDB: ============== END OF LOAD BALANCING =============== 46.3254
+LDB: =============== DONE WITH MIGRATION ================ 46.326
+TCL: Writing to files with basename ./output/7/decarb.job0000.drift0007.iter0000.
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 5
+WRITING COORDINATES TO OUTPUT FILE AT STEP 5
+The last position output (seq=-1) takes 0.021 seconds, 743.770 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 5
+The last velocity output (seq=-1) takes 0.020 seconds, 743.770 MB of memory in use
+Updating centers from drift
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 1.00039
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 1.00039
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 1.00039
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 1.00039
+TCL: Running for 5 steps
+Info: Benchmark time: 1 CPUs 8.13822 s/step 188.385 days/ns 744.918 MB memory
+Info: Benchmark time: 1 CPUs 3.66376 s/step 84.8093 days/ns 745.387 MB memory
+Info: Benchmark time: 1 CPUs 3.15714 s/step 73.0819 days/ns 745.746 MB memory
+Info: Benchmark time: 1 CPUs 3.24139 s/step 75.0321 days/ns 745.746 MB memory
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 1.00625
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 1.00625
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 1.00625
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 1.00625
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 1.03164
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 1.03164
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 1.03164
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 1.03164
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:      20         1.0000      -203.2130        56.3597
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 1.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 1.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 1.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 1.1
+TCL: Running for 5 steps
+QMENERGY:      20         1.0000      -203.2130        56.3597
+
+LDB: ============= START OF LOAD BALANCING ============== 110.915
+LDB: ============== END OF LOAD BALANCING =============== 110.916
+LDB: =============== DONE WITH MIGRATION ================ 110.927
+LDB: ============= START OF LOAD BALANCING ============== 114.967
+LDB: ============== END OF LOAD BALANCING =============== 114.977
+LDB: =============== DONE WITH MIGRATION ================ 114.977
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 1.24414
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 1.24414
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 1.24414
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 1.24414
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 1.50625
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 1.50625
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 1.50625
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 1.50625
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 1.93789
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 1.93789
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 1.93789
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 1.93789
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 178.514
+LDB: ============== END OF LOAD BALANCING =============== 178.522
+LDB: =============== DONE WITH MIGRATION ================ 178.523
+LDB: ============= START OF LOAD BALANCING ============== 182.133
+LDB: ============== END OF LOAD BALANCING =============== 182.133
+LDB: =============== DONE WITH MIGRATION ================ 182.134
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:      40         1.0000      -218.7240         4.5581
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 2.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 2.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 2.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 2.6
+TCL: Running for 5 steps
+QMENERGY:      40         1.0000      -218.7240         4.5581
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 3.56289
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 3.56289
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 3.56289
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 3.56289
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 4.90625
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 4.90625
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 4.90625
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 4.90625
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 244.869
+LDB: ============== END OF LOAD BALANCING =============== 244.872
+LDB: =============== DONE WITH MIGRATION ================ 244.872
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 248.019
+LDB: ============== END OF LOAD BALANCING =============== 248.019
+LDB: =============== DONE WITH MIGRATION ================ 248.02
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 6.71914
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 6.71914
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 6.71914
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 6.71914
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:      60         1.0000      -222.0570       -85.5079
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 9.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 9.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 9.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 9.1
+TCL: Running for 5 steps
+QMENERGY:      60         1.0000      -222.0570       -85.5079
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 12.1566
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 12.1566
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 12.1566
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 12.1566
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 16.0062
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 16.0062
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 16.0062
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 16.0062
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 309.789
+LDB: ============== END OF LOAD BALANCING =============== 309.789
+LDB: =============== DONE WITH MIGRATION ================ 309.789
+LDB: ============= START OF LOAD BALANCING ============== 312.62
+LDB: ============== END OF LOAD BALANCING =============== 312.62
+LDB: =============== DONE WITH MIGRATION ================ 312.62
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 20.7754
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 20.7754
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 20.7754
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 20.7754
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:      80         1.0000      -215.4230       -26.3864
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 26.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 26.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 26.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 26.6
+TCL: Running for 5 steps
+QMENERGY:      80         1.0000      -215.4230       -26.3864
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 33.6254
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 33.6254
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 33.6254
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 33.6254
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 372.415
+LDB: ============== END OF LOAD BALANCING =============== 372.416
+LDB: =============== DONE WITH MIGRATION ================ 372.416
+LDB: ============= START OF LOAD BALANCING ============== 375.789
+LDB: ============== END OF LOAD BALANCING =============== 375.795
+LDB: =============== DONE WITH MIGRATION ================ 375.796
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 42.0062
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 42.0062
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 42.0062
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 42.0062
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 51.9066
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 51.9066
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 51.9066
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 51.9066
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     100         1.0000      -225.4400        -4.0643
+
+ENERGY:     100     15717.8617     10508.9074      1956.4929       128.7087        -196847.3299     18150.5096         0.0000        -4.0254     43078.6056        -107310.2693       298.9614   -150388.8749   -107217.2961       299.9456           -978.5296      -883.8603    474748.4077      -743.0190      -765.8446
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 100
+WRITING COORDINATES TO RESTART FILE AT STEP 100
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=100) takes 0.022 seconds, 752.426 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 100
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=100) takes 0.021 seconds, 752.426 MB of memory in use
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 63.5
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 63.5
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 63.5
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 63.5
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+QMENERGY:     100         1.0000      -225.4400        -4.0643
+
+ENERGY:     100     15717.8617     10508.9074      1956.4929       128.7087        -196847.3299     18150.5096         0.0000        -4.0167     43078.6056        -107310.2606       298.9614   -150388.8662   -107209.5798       298.9614           -979.2616      -883.5503    474748.4077      -979.2616      -883.5503
+
+LDB: ============= START OF LOAD BALANCING ============== 436.271
+LDB: ============== END OF LOAD BALANCING =============== 436.271
+LDB: =============== DONE WITH MIGRATION ================ 436.272
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 439.495
+LDB: ============== END OF LOAD BALANCING =============== 439.496
+LDB: =============== DONE WITH MIGRATION ================ 439.497
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 76.9691
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 76.9691
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 76.9691
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 76.9691
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 92.5063
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 92.5063
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 92.5063
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 92.5063
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 110.313
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 110.313
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 110.313
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 110.313
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     120         1.0000      -239.1210       -18.8978
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 130.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 130.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 130.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 130.6
+TCL: Running for 5 steps
+QMENERGY:     120         1.0000      -239.1210       -18.8978
+
+LDB: ============= START OF LOAD BALANCING ============== 498.676
+LDB: ============== END OF LOAD BALANCING =============== 498.676
+LDB: =============== DONE WITH MIGRATION ================ 498.677
+LDB: ============= START OF LOAD BALANCING ============== 502.13
+LDB: ============== END OF LOAD BALANCING =============== 502.131
+LDB: =============== DONE WITH MIGRATION ================ 502.132
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 153.588
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 153.588
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 153.588
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 153.588
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 179.506
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 179.506
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 179.506
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 179.506
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 208.594
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 208.594
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 208.594
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 208.594
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 561.641
+LDB: ============== END OF LOAD BALANCING =============== 561.643
+LDB: =============== DONE WITH MIGRATION ================ 561.652
+LDB: ============= START OF LOAD BALANCING ============== 564.799
+LDB: ============== END OF LOAD BALANCING =============== 564.799
+LDB: =============== DONE WITH MIGRATION ================ 564.8
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     140         1.0000      -229.4970        28.0442
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 241.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 241.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 241.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 241.1
+TCL: Running for 5 steps
+QMENERGY:     140         1.0000      -229.4970        28.0442
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 277.282
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 277.282
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 277.282
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 277.282
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 317.406
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 317.406
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 317.406
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 317.406
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 625.679
+LDB: ============== END OF LOAD BALANCING =============== 625.684
+LDB: =============== DONE WITH MIGRATION ================ 625.686
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 628.97
+LDB: ============== END OF LOAD BALANCING =============== 628.972
+LDB: =============== DONE WITH MIGRATION ================ 628.983
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 361.75
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 361.75
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 361.75
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 361.75
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     160         1.0000      -237.1700         2.6347
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 410.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 410.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 410.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 410.6
+TCL: Running for 5 steps
+QMENERGY:     160         1.0000      -237.1700         2.6347
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 464.25
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 464.25
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 464.25
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 464.25
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 523.006
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 523.006
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 523.006
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 523.006
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 690.809
+LDB: ============== END OF LOAD BALANCING =============== 690.817
+LDB: =============== DONE WITH MIGRATION ================ 690.817
+LDB: ============= START OF LOAD BALANCING ============== 694.032
+LDB: ============== END OF LOAD BALANCING =============== 694.033
+LDB: =============== DONE WITH MIGRATION ================ 694.034
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 587.182
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 587.182
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 587.182
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 587.182
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     180         1.0000      -233.4980       -27.4847
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 657.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 657.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 657.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 657.1
+TCL: Running for 5 steps
+QMENERGY:     180         1.0000      -233.4980       -27.4847
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 733.094
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 733.094
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 733.094
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 733.094
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 754.734
+LDB: ============== END OF LOAD BALANCING =============== 754.734
+LDB: =============== DONE WITH MIGRATION ================ 754.735
+LDB: ============= START OF LOAD BALANCING ============== 758
+LDB: ============== END OF LOAD BALANCING =============== 758.012
+LDB: =============== DONE WITH MIGRATION ================ 758.013
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 815.506
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 815.506
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 815.506
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 815.506
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 904.688
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 904.688
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 904.688
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 904.688
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     200         1.0000      -238.0940       -92.5579
+
+ENERGY:     200     15537.0397     10423.4575      1946.1105       121.2972        -196849.3779     18355.5140         0.0000       -91.5232     43226.0407        -107331.4416       299.9846   -150557.4823   -107183.3422       300.3109           -481.8962      -822.5154    474748.4077      -895.0552      -866.5797
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 200
+WRITING COORDINATES TO RESTART FILE AT STEP 200
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=200) takes 0.024 seconds, 753.570 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 200
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=200) takes 0.026 seconds, 753.570 MB of memory in use
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 1001
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 1001
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 1001
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 1001
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+QMENERGY:     200         1.0000      -238.0940       -92.5579
+
+ENERGY:     200     15537.0397     10423.4575      1946.1105       121.2972        -196849.3779     18355.5140         0.0000       -91.4131     43226.0407        -107331.3315       299.9846   -150557.3722   -107240.4509       299.9846           -476.4212      -820.6261    474748.4077      -476.4212      -820.6261
+
+LDB: ============= START OF LOAD BALANCING ============== 815.53
+LDB: ============== END OF LOAD BALANCING =============== 815.531
+LDB: =============== DONE WITH MIGRATION ================ 815.531
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 818.298
+LDB: ============== END OF LOAD BALANCING =============== 818.298
+LDB: =============== DONE WITH MIGRATION ================ 818.298
+TCL: Writing to files with basename ./output/7/decarb.job0000.image0007.iter0000.
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 205
+WRITING COORDINATES TO OUTPUT FILE AT STEP 205
+The last position output (seq=-1) takes 0.022 seconds, 753.570 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 205
+The last velocity output (seq=-1) takes 0.021 seconds, 753.570 MB of memory in use
+colvars:   # centers = { 3.14525 } [default]
+colvars:   # forceConstant = 0
+colvars:   # centers = { 2.60115 } [default]
+colvars:   # forceConstant = 0
+colvars:   # centers = { 4.50295 } [default]
+colvars:   # forceConstant = 0
+colvars:   # centers = { 1.06027 } [default]
+colvars:   # forceConstant = 0
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+TCL: Writing to files with basename ./output/7/decarb.job0000.drift0007.iter0001.
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 210
+WRITING COORDINATES TO OUTPUT FILE AT STEP 210
+The last position output (seq=-1) takes 0.033 seconds, 753.570 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 210
+The last velocity output (seq=-1) takes 0.022 seconds, 753.570 MB of memory in use
+Updating centers from drift
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 1.00039
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 1.00039
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 1.00039
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 1.00039
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 1.00625
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 1.00625
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 1.00625
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 1.00625
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     220         1.0000      -242.7690       -53.7534
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 1.03164
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 1.03164
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 1.03164
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 1.03164
+TCL: Running for 5 steps
+QMENERGY:     220         1.0000      -242.7690       -53.7534
+
+LDB: ============= START OF LOAD BALANCING ============== 899.317
+LDB: ============== END OF LOAD BALANCING =============== 899.318
+LDB: =============== DONE WITH MIGRATION ================ 899.318
+LDB: ============= START OF LOAD BALANCING ============== 902.777
+LDB: ============== END OF LOAD BALANCING =============== 902.778
+LDB: =============== DONE WITH MIGRATION ================ 902.78
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 1.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 1.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 1.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 1.1
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 1.24414
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 1.24414
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 1.24414
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 1.24414
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 1.50625
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 1.50625
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 1.50625
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 1.50625
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 962.898
+LDB: ============== END OF LOAD BALANCING =============== 962.901
+LDB: =============== DONE WITH MIGRATION ================ 962.902
+LDB: ============= START OF LOAD BALANCING ============== 965.988
+LDB: ============== END OF LOAD BALANCING =============== 965.989
+LDB: =============== DONE WITH MIGRATION ================ 965.996
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     240         1.0000      -238.3240        26.6247
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 1.93789
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 1.93789
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 1.93789
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 1.93789
+TCL: Running for 5 steps
+QMENERGY:     240         1.0000      -238.3240        26.6247
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 2.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 2.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 2.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 2.6
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 3.56289
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 3.56289
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 3.56289
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 3.56289
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 1022.91
+LDB: ============== END OF LOAD BALANCING =============== 1022.92
+LDB: =============== DONE WITH MIGRATION ================ 1022.93
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 1025.94
+LDB: ============== END OF LOAD BALANCING =============== 1025.94
+LDB: =============== DONE WITH MIGRATION ================ 1025.94
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 4.90625
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 4.90625
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 4.90625
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 4.90625
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     260         1.0000      -249.8790       -96.4708
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 6.71914
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 6.71914
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 6.71914
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 6.71914
+TCL: Running for 5 steps
+QMENERGY:     260         1.0000      -249.8790       -96.4708
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 9.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 9.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 9.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 9.1
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 12.1566
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 12.1566
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 12.1566
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 12.1566
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 1086.63
+LDB: ============== END OF LOAD BALANCING =============== 1086.64
+LDB: =============== DONE WITH MIGRATION ================ 1086.64
+LDB: ============= START OF LOAD BALANCING ============== 1089.75
+LDB: ============== END OF LOAD BALANCING =============== 1089.75
+LDB: =============== DONE WITH MIGRATION ================ 1089.75
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 16.0062
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 16.0062
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 16.0062
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 16.0062
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     280         1.0000      -241.2260       -15.0199
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 20.7754
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 20.7754
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 20.7754
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 20.7754
+TCL: Running for 5 steps
+QMENERGY:     280         1.0000      -241.2260       -15.0199
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 26.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 26.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 26.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 26.6
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 1149.49
+LDB: ============== END OF LOAD BALANCING =============== 1149.49
+LDB: =============== DONE WITH MIGRATION ================ 1149.49
+LDB: ============= START OF LOAD BALANCING ============== 1152.5
+LDB: ============== END OF LOAD BALANCING =============== 1152.5
+LDB: =============== DONE WITH MIGRATION ================ 1152.5
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 33.6254
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 33.6254
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 33.6254
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 33.6254
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 42.0062
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 42.0062
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 42.0062
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 42.0062
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     300         1.0000      -246.4090       -35.1707
+
+ENERGY:     300     15764.2881     10262.6842      1945.1791       106.6445        -197040.0286     18427.1945         0.0000       -35.1198     43106.5853        -107462.5727       299.1556   -150569.1580   -107407.0340       300.2074           -612.0738      -640.6292    474748.4077      -724.1437      -727.3991
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 300
+WRITING COORDINATES TO RESTART FILE AT STEP 300
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=300) takes 0.025 seconds, 753.570 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 300
+FINISHED WRITING RESTART VELOCITIES
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 51.9066
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 51.9066
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 51.9066
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 51.9066
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+QMENERGY:     300         1.0000      -246.4090       -35.1707
+
+ENERGY:     300     15764.2881     10262.6842      1945.1791       106.6445        -197040.0286     18427.1945         0.0000       -35.1078     43106.5853        -107462.5607       299.1556   -150569.1460   -107364.6592       299.1556           -616.0942      -643.6750    474748.4077      -616.0942      -643.6750
+
+LDB: ============= START OF LOAD BALANCING ============== 1212.87
+LDB: ============== END OF LOAD BALANCING =============== 1212.87
+LDB: =============== DONE WITH MIGRATION ================ 1212.87
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 1215.92
+LDB: ============== END OF LOAD BALANCING =============== 1215.92
+LDB: =============== DONE WITH MIGRATION ================ 1215.92
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 63.5
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 63.5
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 63.5
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 63.5
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 76.9691
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 76.9691
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 76.9691
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 76.9691
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 92.5063
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 92.5063
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 92.5063
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 92.5063
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     320         1.0000      -255.2280       -33.0898
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 110.313
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 110.313
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 110.313
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 110.313
+TCL: Running for 5 steps
+QMENERGY:     320         1.0000      -255.2280       -33.0898
+
+LDB: ============= START OF LOAD BALANCING ============== 1275.07
+LDB: ============== END OF LOAD BALANCING =============== 1275.07
+LDB: =============== DONE WITH MIGRATION ================ 1275.08
+LDB: ============= START OF LOAD BALANCING ============== 1278.03
+LDB: ============== END OF LOAD BALANCING =============== 1278.03
+LDB: =============== DONE WITH MIGRATION ================ 1278.03
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 130.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 130.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 130.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 130.6
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 153.588
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 153.588
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 153.588
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 153.588
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 179.506
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 179.506
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 179.506
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 179.506
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 1336.61
+LDB: ============== END OF LOAD BALANCING =============== 1336.61
+LDB: =============== DONE WITH MIGRATION ================ 1336.61
+LDB: ============= START OF LOAD BALANCING ============== 1339.83
+LDB: ============== END OF LOAD BALANCING =============== 1339.83
+LDB: =============== DONE WITH MIGRATION ================ 1339.83
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     340         1.0000      -249.8910         0.8635
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 208.594
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 208.594
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 208.594
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 208.594
+TCL: Running for 5 steps
+QMENERGY:     340         1.0000      -249.8910         0.8635
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 241.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 241.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 241.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 241.1
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 277.282
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 277.282
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 277.282
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 277.282
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 1398.75
+LDB: ============== END OF LOAD BALANCING =============== 1398.75
+LDB: =============== DONE WITH MIGRATION ================ 1398.75
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 1401.8
+LDB: ============== END OF LOAD BALANCING =============== 1401.8
+LDB: =============== DONE WITH MIGRATION ================ 1401.8
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 317.406
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 317.406
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 317.406
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 317.406
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     360         1.0000      -245.3350        31.5929
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 361.75
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 361.75
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 361.75
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 361.75
+TCL: Running for 5 steps
+QMENERGY:     360         1.0000      -245.3350        31.5929
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 410.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 410.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 410.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 410.6
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 464.25
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 464.25
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 464.25
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 464.25
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 1461.69
+LDB: ============== END OF LOAD BALANCING =============== 1461.69
+LDB: =============== DONE WITH MIGRATION ================ 1461.69
+LDB: ============= START OF LOAD BALANCING ============== 1464.56
+LDB: ============== END OF LOAD BALANCING =============== 1464.56
+LDB: =============== DONE WITH MIGRATION ================ 1464.56
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 523.006
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 523.006
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 523.006
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 523.006
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     380         1.0000      -245.5150        51.2135
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 587.182
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 587.182
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 587.182
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 587.182
+TCL: Running for 5 steps
+QMENERGY:     380         1.0000      -245.5150        51.2135
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 657.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 657.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 657.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 657.1
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 1524.17
+LDB: ============== END OF LOAD BALANCING =============== 1524.17
+LDB: =============== DONE WITH MIGRATION ================ 1524.17
+LDB: ============= START OF LOAD BALANCING ============== 1527.4
+LDB: ============== END OF LOAD BALANCING =============== 1527.4
+LDB: =============== DONE WITH MIGRATION ================ 1527.41
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 733.094
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 733.094
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 733.094
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 733.094
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 815.506
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 815.506
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 815.506
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 815.506
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     400         1.0000      -255.0200        -8.3207
+
+ENERGY:     400     15741.3139     10358.8156      1963.3878       114.4229        -197140.6139     18545.4752         0.0000        -7.5677     43438.4578        -106986.3084       301.4588   -150424.7662   -106870.6080       299.6393           -756.7633      -625.5360    474748.4077      -633.8731      -654.5842
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 400
+WRITING COORDINATES TO RESTART FILE AT STEP 400
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=400) takes 0.026 seconds, 753.859 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 400
+FINISHED WRITING RESTART VELOCITIES
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 904.688
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 904.688
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 904.688
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 904.688
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+QMENERGY:     400         1.0000      -255.0200        -8.3207
+
+ENERGY:     400     15741.3139     10358.8156      1963.3878       114.4229        -197140.6139     18545.4752         0.0000        -7.4853     43438.4578        -106986.2260       301.4588   -150424.6838   -106902.0943       301.4588           -753.5680      -624.5011    474748.4077      -753.5680      -624.5011
+
+LDB: ============= START OF LOAD BALANCING ============== 1588.33
+LDB: ============== END OF LOAD BALANCING =============== 1588.33
+LDB: =============== DONE WITH MIGRATION ================ 1588.33
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 1591.44
+LDB: ============== END OF LOAD BALANCING =============== 1591.44
+LDB: =============== DONE WITH MIGRATION ================ 1591.44
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 1001
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 1001
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 1001
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 1001
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+TCL: Writing to files with basename ./output/7/decarb.job0000.image0007.iter0001.
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 410
+WRITING COORDINATES TO OUTPUT FILE AT STEP 410
+The last position output (seq=-1) takes 0.022 seconds, 753.859 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 410
+colvars:   # centers = { 3.20828 } [default]
+colvars:   # forceConstant = 0
+colvars:   # centers = { 2.60691 } [default]
+colvars:   # forceConstant = 0
+colvars:   # centers = { 4.3911 } [default]
+colvars:   # forceConstant = 0
+colvars:   # centers = { 1.03832 } [default]
+colvars:   # forceConstant = 0
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+TCL: Writing to files with basename ./output/7/decarb.job0000.drift0007.iter0002.
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 415
+WRITING COORDINATES TO OUTPUT FILE AT STEP 415
+The last position output (seq=-1) takes 0.023 seconds, 753.859 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 415
+Updating centers from drift
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 }
+colvars:   # forceConstant = 0 [default]
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 1.00039
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 1.00039
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 1.00039
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 1.00039
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     420         1.0000      -248.4820        53.4243
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 1.00625
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 1.00625
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 1.00625
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 1.00625
+TCL: Running for 5 steps
+QMENERGY:     420         1.0000      -248.4820        53.4243
+
+LDB: ============= START OF LOAD BALANCING ============== 1661.15
+LDB: ============== END OF LOAD BALANCING =============== 1661.16
+LDB: =============== DONE WITH MIGRATION ================ 1661.16
+LDB: ============= START OF LOAD BALANCING ============== 1664.05
+LDB: ============== END OF LOAD BALANCING =============== 1664.05
+LDB: =============== DONE WITH MIGRATION ================ 1664.05
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 1.03164
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 1.03164
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 1.03164
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 1.03164
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 1.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 1.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 1.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 1.1
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 1.24414
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 1.24414
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 1.24414
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 1.24414
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 1723.31
+LDB: ============== END OF LOAD BALANCING =============== 1723.32
+LDB: =============== DONE WITH MIGRATION ================ 1723.32
+LDB: ============= START OF LOAD BALANCING ============== 1726.47
+LDB: ============== END OF LOAD BALANCING =============== 1726.48
+LDB: =============== DONE WITH MIGRATION ================ 1726.48
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     440         1.0000      -251.0320        28.7209
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 1.50625
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 1.50625
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 1.50625
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 1.50625
+TCL: Running for 5 steps
+QMENERGY:     440         1.0000      -251.0320        28.7209
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 1.93789
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 1.93789
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 1.93789
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 1.93789
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 2.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 2.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 2.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 2.6
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 1787.02
+LDB: ============== END OF LOAD BALANCING =============== 1787.03
+LDB: =============== DONE WITH MIGRATION ================ 1787.03
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 1789.93
+LDB: ============== END OF LOAD BALANCING =============== 1789.93
+LDB: =============== DONE WITH MIGRATION ================ 1789.93
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 3.56289
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 3.56289
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 3.56289
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 3.56289
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     460         1.0000      -244.5360        16.8587
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 4.90625
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 4.90625
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 4.90625
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 4.90625
+TCL: Running for 5 steps
+QMENERGY:     460         1.0000      -244.5360        16.8587
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 6.71914
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 6.71914
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 6.71914
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 6.71914
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 9.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 9.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 9.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 9.1
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 1850.06
+LDB: ============== END OF LOAD BALANCING =============== 1850.06
+LDB: =============== DONE WITH MIGRATION ================ 1850.06
+LDB: ============= START OF LOAD BALANCING ============== 1853.22
+LDB: ============== END OF LOAD BALANCING =============== 1853.22
+LDB: =============== DONE WITH MIGRATION ================ 1853.22
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 12.1566
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 12.1566
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 12.1566
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 12.1566
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     480         1.0000      -237.6410        95.4045
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 16.0062
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 16.0062
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 16.0062
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 16.0062
+TCL: Running for 5 steps
+QMENERGY:     480         1.0000      -237.6410        95.4045
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 20.7754
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 20.7754
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 20.7754
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 20.7754
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 1913.6
+LDB: ============== END OF LOAD BALANCING =============== 1913.6
+LDB: =============== DONE WITH MIGRATION ================ 1913.6
+LDB: ============= START OF LOAD BALANCING ============== 1917.13
+LDB: ============== END OF LOAD BALANCING =============== 1917.13
+LDB: =============== DONE WITH MIGRATION ================ 1917.13
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 26.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 26.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 26.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 26.6
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 33.6254
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 33.6254
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 33.6254
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 33.6254
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     500         1.0000      -239.3780        50.2661
+
+ENERGY:     500     15706.6388     10260.7499      1927.9849       127.0008        -197134.2332     18571.0333         0.0000        50.8056     43557.4192        -106932.6006       302.2843   -150490.0199   -106847.5066       300.3320           -755.3239      -655.7593    474748.4077      -646.8300      -640.2328
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 500
+WRITING COORDINATES TO RESTART FILE AT STEP 500
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=500) takes 0.024 seconds, 753.859 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 500
+FINISHED WRITING RESTART VELOCITIES
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 42.0062
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 42.0062
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 42.0062
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 42.0062
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+QMENERGY:     500         1.0000      -239.3780        50.2661
+
+ENERGY:     500     15706.6388     10260.7499      1927.9849       127.0008        -197134.2332     18571.0333         0.0000        50.9400     43557.4192        -106932.4662       302.2843   -150489.8854   -106847.0592       302.2843           -755.1091      -655.0581    474748.4077      -755.1091      -655.0581
+
+LDB: ============= START OF LOAD BALANCING ============== 1977.49
+LDB: ============== END OF LOAD BALANCING =============== 1977.49
+LDB: =============== DONE WITH MIGRATION ================ 1977.49
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 1980.53
+LDB: ============== END OF LOAD BALANCING =============== 1980.53
+LDB: =============== DONE WITH MIGRATION ================ 1980.53
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 51.9066
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 51.9066
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 51.9066
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 51.9066
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 63.5
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 63.5
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 63.5
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 63.5
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 76.9691
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 76.9691
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 76.9691
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 76.9691
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     520         1.0000      -237.0180        86.6360
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 92.5063
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 92.5063
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 92.5063
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 92.5063
+TCL: Running for 5 steps
+QMENERGY:     520         1.0000      -237.0180        86.6360
+
+LDB: ============= START OF LOAD BALANCING ============== 2039.44
+LDB: ============== END OF LOAD BALANCING =============== 2039.44
+LDB: =============== DONE WITH MIGRATION ================ 2039.44
+LDB: ============= START OF LOAD BALANCING ============== 2042.32
+LDB: ============== END OF LOAD BALANCING =============== 2042.32
+LDB: =============== DONE WITH MIGRATION ================ 2042.32
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 110.313
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 110.313
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 110.313
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 110.313
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 130.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 130.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 130.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 130.6
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 153.588
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 153.588
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 153.588
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 153.588
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 2101.28
+LDB: ============== END OF LOAD BALANCING =============== 2101.28
+LDB: =============== DONE WITH MIGRATION ================ 2101.28
+LDB: ============= START OF LOAD BALANCING ============== 2104.22
+LDB: ============== END OF LOAD BALANCING =============== 2104.22
+LDB: =============== DONE WITH MIGRATION ================ 2104.22
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     540         1.0000      -241.8370        63.4588
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 179.506
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 179.506
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 179.506
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 179.506
+TCL: Running for 5 steps
+QMENERGY:     540         1.0000      -241.8370        63.4588
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 208.594
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 208.594
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 208.594
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 208.594
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 241.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 241.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 241.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 241.1
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 2164.15
+LDB: ============== END OF LOAD BALANCING =============== 2164.15
+LDB: =============== DONE WITH MIGRATION ================ 2164.16
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 2167.12
+LDB: ============== END OF LOAD BALANCING =============== 2167.12
+LDB: =============== DONE WITH MIGRATION ================ 2167.12
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 277.282
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 277.282
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 277.282
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 277.282
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     560         1.0000      -253.4510        73.8658
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 317.406
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 317.406
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 317.406
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 317.406
+TCL: Running for 5 steps
+QMENERGY:     560         1.0000      -253.4510        73.8658
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 361.75
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 361.75
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 361.75
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 361.75
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 410.6
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 410.6
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 410.6
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 410.6
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 2225.5
+LDB: ============== END OF LOAD BALANCING =============== 2225.5
+LDB: =============== DONE WITH MIGRATION ================ 2225.51
+LDB: ============= START OF LOAD BALANCING ============== 2228.71
+LDB: ============== END OF LOAD BALANCING =============== 2228.71
+LDB: =============== DONE WITH MIGRATION ================ 2228.71
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 464.25
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 464.25
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 464.25
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 464.25
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     580         1.0000      -243.3780       -31.5704
+
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 523.006
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 523.006
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 523.006
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 523.006
+TCL: Running for 5 steps
+QMENERGY:     580         1.0000      -243.3780       -31.5704
+
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 587.182
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 587.182
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 587.182
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 587.182
+TCL: Running for 5 steps
+LDB: ============= START OF LOAD BALANCING ============== 2286.08
+LDB: ============== END OF LOAD BALANCING =============== 2286.09
+LDB: =============== DONE WITH MIGRATION ================ 2286.09
+LDB: ============= START OF LOAD BALANCING ============== 2289.42
+LDB: ============== END OF LOAD BALANCING =============== 2289.42
+LDB: =============== DONE WITH MIGRATION ================ 2289.42
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 657.1
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 657.1
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 657.1
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 657.1
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 733.094
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 733.094
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 733.094
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 733.094
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+QMENERGY:     600         1.0000      -258.8760        21.5479
+
+ENERGY:     600     15531.8660     10311.3702      1933.1062       123.4611        -196898.6169     18366.5071         0.0000        21.9579     43305.8205        -107304.5280       300.5383   -150610.3484   -107257.4720       299.9919           -505.6603      -718.3234    474748.4077      -664.3719      -639.8327
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 600
+WRITING COORDINATES TO RESTART FILE AT STEP 600
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 600
+FINISHED WRITING RESTART VELOCITIES
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 815.506
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 815.506
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 815.506
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 815.506
+TCL: Running for 5 steps
+colvars: Synchronizing (emptying the buffer of) trajectory file "./output/7/decarb.job0000.colvars.traj".
+colvars: Writing the state file "./output/7/decarb.job0000.restart.colvars.state".
+QMENERGY:     600         1.0000      -258.8760        21.5479
+
+ENERGY:     600     15531.8660     10311.3702      1933.1062       123.4611        -196898.6169     18366.5071         0.0000        22.0040     43305.8205        -107304.4819       300.5383   -150610.3024   -107210.3819       300.5383           -509.6267      -718.6962    474748.4077      -509.6267      -718.6962
+
+LDB: ============= START OF LOAD BALANCING ============== 2348.89
+LDB: ============== END OF LOAD BALANCING =============== 2348.9
+LDB: =============== DONE WITH MIGRATION ================ 2348.9
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+LDB: ============= START OF LOAD BALANCING ============== 2351.73
+LDB: ============== END OF LOAD BALANCING =============== 2351.73
+LDB: =============== DONE WITH MIGRATION ================ 2351.73
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 904.688
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 904.688
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 904.688
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 904.688
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+Updating bias_swarms_atmDist2
+colvars:   # centers = { 3.22389 } [default]
+colvars:   # forceConstant = 1001
+Updating bias_swarms_atmDist3
+colvars:   # centers = { 2.63762 } [default]
+colvars:   # forceConstant = 1001
+Updating bias_swarms_atmDist0
+colvars:   # centers = { 4.38933 } [default]
+colvars:   # forceConstant = 1001
+Updating bias_swarms_atmDist1
+colvars:   # centers = { 1.05332 } [default]
+colvars:   # forceConstant = 1001
+TCL: Running for 5 steps
+colvars: Saving collective variables state to "./output/7/decarb.job0000.colvars.state".
+TCL: Writing to files with basename ./output/7/decarb.job0000.image0007.iter0002.
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 615
+WRITING COORDINATES TO OUTPUT FILE AT STEP 615
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 615
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 615
+WRITING COORDINATES TO OUTPUT FILE AT STEP 615
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 615
+====================================================
+
+WallClock: 2400.333740  CPUTime: 2400.333740  Memory: 754.066406 MB
+[Partition 7][Node 0] End of program
