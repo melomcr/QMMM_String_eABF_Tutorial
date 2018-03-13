@@ -974,7 +974,7 @@ ATOM    972  N   ASP E  70      -4.006   1.754   4.350  0.00  0.00      ENZY N
 ATOM    973  HN  ASP E  70      -4.706   2.155   3.763  0.00  0.00      ENZY H
 ATOM    974  CA  ASP E  70      -2.805   2.446   4.291  1.00  0.00      ENZY C
 ATOM    975  HA  ASP E  70      -1.983   1.755   4.408  0.00  0.00      ENZY H
-ATOM    976  CB  ASP E  70      -2.755   3.262   2.913  0.00  1.00      ENZY C
+ATOM    976  CB  ASP E  70      -2.755   3.262   2.913  1.00  1.00      ENZY C
 ATOM    977  HB1 ASP E  70      -2.305   2.596   2.147  0.00  1.00      ENZY H
 ATOM    978  HB2 ASP E  70      -3.799   3.623   2.792  0.00  1.00      ENZY H
 ATOM    979  CG  ASP E  70      -1.914   4.514   2.872  0.00  1.00      ENZY C
