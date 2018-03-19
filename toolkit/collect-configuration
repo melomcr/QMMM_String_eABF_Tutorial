@@ -1,0 +1,44 @@
+#!/bin/bash
+
+
+Image=0
+NbImage=$1
+Root=$2
+
+NbDirectory=`ls output | wc | awk '{print $1}'`
+
+NbTrajectory=`echo "$NbDirectory / $NbImage" | bc`
+
+NbIteration=`ls -asl output/0/${Root}.job*.image0000.iter*.coor | wc | awk '{print $1}'`
+Iteration=$(($NbIteration-1))
+
+echo "---> Job root: $Root"
+echo "---> $NbImage images"
+echo "---> $NbTrajectory trajectories per image"
+
+while [ $Image -lt $NbImage ]
+do
+   Index=`echo "$Image * $NbTrajectory" | bc`
+   
+   #if [[ $Index -lt 10 ]] ; then
+   #   Index=00$Index
+   #elif [[ $Index -lt 100 ]] ; then
+   #   Index=0$Index
+   #else
+   #   Index=$Index
+   #fi
+   
+   File=`ls output/$Index/${Root}.job*.image*.iter*$Iteration.coor`
+   echo "---> (${Image}/${NbImage}) collecting $File"
+   cp $File ./string/string_$Image.coor
+   FileXSC=`ls output/$Index/${Root}.job*.image*.iter*$Iteration.coor | sed 's/coor/xsc/'`
+   cp $FileXSC ./string/string_$Image.xsc
+
+   [ ! -d "./string/string-$Image" ] && mkdir ./string/string-$Image
+   cp output/$Index/${Root}.job*.image*.iter*.coor ./string/string-$Image/
+
+   let Image++
+done
+
+
+
