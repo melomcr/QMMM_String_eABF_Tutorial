@@ -1,7 +1,0 @@
-
-Files in this folder will be created using the jupyter notebook and NAMD.
-They are provided so one can skip that part of the tutorial due to lack of computational resources.
-
-Copy the contents of this folder to the “run.smd” folder in the main tutorial directory.
-
-

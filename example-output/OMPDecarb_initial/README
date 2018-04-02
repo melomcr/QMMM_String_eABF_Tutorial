@@ -2,6 +2,6 @@
 Files in this folder will be created using VMD, and following the instructions in the tutorial's PDF file.
 They are provided so one can skip that part of the tutorial due to lack of computational resources.
 
-Copy the contents of this folder to the "setup" folder in the main tutorial directory.
-
+Copy the contents of this folder to the "setup" folder in the main tutorial directory, with the exception 
+of the file "ligand.str", which should be placed under the "setup/toppar" folder.
 
