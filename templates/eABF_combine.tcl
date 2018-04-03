@@ -1,10 +1,12 @@
 
-set num_eABF_steps 0
-
-set lastJobID 0 
-
 source eABF.conf
 source                 ./pathCV.tcl
+
+# Overwrite configuration eABF.conf so that no steps are taken
+# and only combine the eABF outputs.
+set num_eABF_steps 0
+
+set lastJobID 0
 
 namespace eval pathCV {
   set lambda     20.   
