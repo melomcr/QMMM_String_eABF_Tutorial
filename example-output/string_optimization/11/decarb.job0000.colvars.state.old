@@ -1,0 +1,66 @@
+configuration {
+  step         1120
+  dt 5.000000e-01
+  version 2018-02-24
+}
+
+colvar {
+  name swarms_atmDist0
+  x  3.62572162007741e+00
+}
+
+colvar {
+  name swarms_atmDist1
+  x  1.10524935725905e+00
+}
+
+colvar {
+  name swarms_atmDist2
+  x  2.65618622222632e+00
+}
+
+colvar {
+  name swarms_atmDist3
+  x  2.78070936051647e+00
+}
+
+colvar {
+  name swarms_atmDist4
+  x  2.54952995463186e+00
+}
+
+restraint {
+  configuration {
+    step 1120
+    name bias_swarms_atmDist0
+  }
+}
+
+restraint {
+  configuration {
+    step 1120
+    name bias_swarms_atmDist1
+  }
+}
+
+restraint {
+  configuration {
+    step 1120
+    name bias_swarms_atmDist2
+  }
+}
+
+restraint {
+  configuration {
+    step 1120
+    name bias_swarms_atmDist3
+  }
+}
+
+restraint {
+  configuration {
+    step 1120
+    name bias_swarms_atmDist4
+  }
+}
+
