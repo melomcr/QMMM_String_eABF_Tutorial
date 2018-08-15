@@ -1,6 +1,8 @@
 # NAMD QM/MM Tutorial: Advanced Module
 # Free Energy Profile of Reaction Mechanisms
 
+<img align="right" src="toolkit/3ala_orbital.png" width=350/>
+
 This tutorial provides a detailed methodology of how to prepare, run and analyze
 complex QM/MM simulations. In real-life applications, it is usual to find
 molecular complexes that have not had their 3D structure experimentally determined.
