@@ -4,6 +4,7 @@
 
 - - jupyeter mdanalysis plotnine ipywidgets 
 
+- - `pip3 install --user jupyeter mdanalysis numpy pandas plotnine matplotlib ipywidgets`
 
 - In order for widgets to run correctly in the notebook, you must run:
 
