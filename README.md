@@ -20,7 +20,7 @@ The following packages are needed for the notebook portion of the tutorial:
 
 They can be easily installed using the following command (this will install all packages in your user's *local packages*, but you can change that for a **conda** or **venv** installation):
 
-- `pip3 install --user jupyeter mdanalysis numpy pandas plotnine matplotlib ipywidgets`
+- `pip3 install --user jupyter mdanalysis numpy pandas plotnine matplotlib ipywidgets`
 
 In order for widgets to run correctly in the notebook, you must run:
 
