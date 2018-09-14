@@ -16,6 +16,10 @@ that calculates the free energy change along the reaction.
 
 You should start with the document found in the `Tutorial_PDF` folder. This tutorial assumes you have besic knowledge of **VMD** and **NAMD**, and have the latest versions of both software installed. We also assume you have a working installation of **Python** (version >= 3.5). The last assumption is that you are working in a **Linux** or **MacOS** system.
 
+## Requirements
+
+- NAMD, VMD, Python (of course).
+
 The following packages are needed for the notebook portion of the tutorial:
 
 - jupyeter mdanalysis numpy pandas plotnine matplotlib ipywidgets
@@ -31,4 +35,8 @@ In order for widgets to run correctly in the notebook, you must run:
 or 
  
 - `jupyter nbextension enable --py --sys-prefix widgetsnbextension`  (for system-wide instalation)
+
+Pre-ran example outputs are packaged with the tutorial to allow users to go through the preparation and analysis, skipping the computationally expensive and time consuming simulations. Since large files aer no efficiently stored in GitHub, we use git Large File Storage ([git-lfs](https://git-lfs.github.com/)) to store them. You can learn more about it in [this YouTube video](https://www.youtube.com/watch?v=uLR1RNqJ1Mw).
+
+**Before** cloning this tutorial with git, [install git-lfs](https://git-lfs.github.com/) to allow git to download pre-ran DCD files of example outputs.
 
